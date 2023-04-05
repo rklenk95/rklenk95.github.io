@@ -1,21 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio - Ryan Klenk</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<style>
+    
 </style>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="#about-me">About Me</a></li>
-                <li><a href="#project">Projects</a> </li>
+                <li><a href="#projects">Projects</a> </li>
                 <li><a href="#contact">Contact</a></li>                
             </ul>
         </nav>    
     </header>
 
     <section id="about-me">
+        <h3>Ryan Klenk</h3>
         <h1>About Me</h1>
         <figure>
             <img src="images/head-shot.jpg" alt="head-shot">
         </figure>
-        <p>I am a senior computer science major at Worcester State University with a strong passion for software development. 
+        <p> Hello, my name is Ryan Klenk. I am a senior computer science major at Worcester State University with a strong passion for software development. 
             Throughout my coursework, I have gained hands-on experience in software design and testing. My skills include Java, 
             JavaScript, C, MySQL, Git, as well as using the Scrum framework. Beyond my technical abilities, I am a fast learner, 
             adaptable, and possess strong communication skills. As a dependable and meticulous individual, I am committed to offering 
@@ -24,14 +34,73 @@
 
     </section>
 
-    <section id="project">
+    <section id="projects">
         <h1>Projects</h1>
+        <br>
+
+        <p class="project-name">LibreFoodPantry</p>
+        <p class="project-description">This is the project I am currently working on. LibreFoodPantry is an open-source software that will 
+            help local food pantries serve their guests better. I am working on the inventory subsystem as part of a team of five peers. We 
+            are using GitLab to host the project and run it through a CI/CD pipeline. Additionally, we are using Docker to develop the code, 
+            so it can run on any machine. We are using the Scrum framework to organize our work as a team. I am working on both the front-end 
+            and back-end of the project. Some of my accomplishments so far include updating parts of the front-end and back-end to meet the product 
+            owner's specifications and writing automated tests.
+        </p>
+        <img class="project-pic" src="images/backend_pic.png" alt="back-end" style="display: block; margin: auto;">
+        
+        <img class="project-pic" src="images/frontend_pic.png" alt="front-end" style="display: block; margin: auto;">
+        <a id = "libre-link" href="https://librefoodpantry.org/">LibreFoodPantry.org</a>
+        <br>
+        <a id = "libre-link" href="https://gitlab.com/LibreFoodPantry/client-solutions/theas-pantry/inventorysystem">GitLab Repository</a>
+
+
+
+
+        <p class="project-name">Operation Hydration - App</p>
+        <p class="project-description">This is an Android app I developed to help users track how much water they are drinking throughout the day and 
+            set a goal for how much water they want to drink. The goal can be set manually or calculated based on the user's age and weight. The user 
+            can input how much water they have had in either cups or ounces, and the app will automatically convert it to cups when displaying their 
+            progress. I developed this app using Android Studio and Java.
+        </p>
+
+        <img class="project-pic" id = "app_pic" src="images/app_welcome.png" alt="app_welcome" style="display: block; margin: auto;">
+        
+        <video width="640" height="360" controls>
+            <source src="images/Operation-Hydration.mp4" type="video/mp4">
+            <source src="images/Operation-Hydration.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+
+
+
+        <p class="project-name">Store Managment System</p>
+        <p class="project-description">This project involved creating a database in MySQL and developing a Java application to access and manipulate 
+            the data. I designed and populated the database with the information needed for a video game store, including inventory, transactions, employee 
+            information, and customer information. Additionally, I implemented different levels of access based on user roles. The Java application has a 
+            menu-based interface, allowing users to navigate to sub-menus and perform actions based on their privileges after logging in.
+        </p>    
+
+        <img class="project-pic" src="images/MySQL_Store.png" alt="MySQL_Store" style="display: block; margin: auto;">
+        
+        <video id="data_vid" width="640" height="360" controls>
+            <source src="images/Store_Database.mp4" type="video/mp4">
+            <source src="images/Store_Database.mp4" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
     </section>
 
     <section id="contact">
         <h1>Contact</h1>
-        <a href="https://www.linkedin.com/in/ryan-klenk-0b3098268/">LinkedIn</a>
-        <p>Reach me at <strong><u>ryanjklenk@gmail.com</u></strong></p>
+        <h2>Ryan Klenk</h2>
+        <a href="https://www.linkedin.com/in/ryan-klenk-0b3098268/">
+            <img class = "logo" src="images/LinkedIn_logo.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/rklenk95">
+            <img class = "logo" src="images/GitHub_logo.png" alt="GitHub">
+        </a>
+        <br>
+        <button onclick="location.href='mailto:ryanjklenk@gmail.com'">EMAIL ME</button>
+        <p id="reach-me">Reach me at <strong><u>ryanjklenk@gmail.com</u></strong></p>
     </section>
 </body>
 </html>
