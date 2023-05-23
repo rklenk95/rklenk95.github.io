@@ -12,7 +12,11 @@ header{
     padding: 10px;
     margin-bottom: -30px;
     height: 85px;
-    text-align: center;     
+    text-align: center;    
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
 }
 li a{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
@@ -54,6 +58,9 @@ h3{
     border-radius: 50%;
     float: left;
     padding: 50px;
+}
+#about-me{
+    padding-top: 50px;
 }
 
 .project-pic{
