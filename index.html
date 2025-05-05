@@ -5,15 +5,13 @@
     <link rel="stylesheet" href="styles.css"> 
 </head>
 
-<style>
-    
-</style>
 <body>
-    <header id ="myHeader">
+    <header id="myHeader">
         <nav>
             <ul>
                 <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#projects">University Projects</a></li>
                 <li><a href="#contact">Contact</a></li>                
             </ul>
         </nav>    
@@ -25,17 +23,40 @@
         <figure>
             <img src="images/head-shot.jpg" alt="head-shot">
         </figure>
-        <p> Hello, my name is Ryan Klenk. I am a recently graduated from Worcester State University with a major in computer science. 
-            I have a strong passion for software development and throughout my coursework, I have gained hands-on experience in software 
-            design and testing. My skills include Java, JavaScript, C, C++, MySQL, Git, as well as using the Scrum framework. Beyond my 
-            technical abilities, I am a fast learner, adaptable, and possess strong communication skills. As a dependable and meticulous 
-            individual, I am committed to offering valuable contributions to a professional team. My goal is to secure an entry-level position 
-            in software development. Feel free to connect with me to learn more about my qualifications and experience.</p>
+        <p>         I'm a Software Engineer with a background in developing embedded systems, flight control software, and internal tools for 
+            complex hardware platforms. I hold a Bachelor's degree in Computer Science from Worcester State University and have professional 
+            experience working on advanced unmanned aerial systems, including the KARGO UAV program at Kaman Air Vehicles.
+            <br><br>
+            My technical skill set includes C, C++, Python, C#/.NET, shell scripting, and DevOps tools. I've contributed to real-time and 
+            mission-critical software systems, supported system integration and testing, and created automation tools to improve engineering 
+            workflows. I'm passionate about building efficient, reliable software for high-impact applications.</p>
+    </section>
 
+    <section id="work-experience">
+        <h1>Work Experience</h1>
+        <br>
+    
+        <p class="project-name">Software Engineer – Kaman Air Vehicles (March 2023 – April 2025)</p>
+        <p class="project-description">
+            Contributed to the development of the <strong>KARGO UAV</strong>, a medium-lift autonomous unmanned aerial vehicle (UAV) 
+            designed to support expeditionary logistics missions for both the U.S. military and commercial clients.
+            <br><br>
+            As part of a multidisciplinary engineering team, I focused on embedded systems, flight control, and internal tooling to support 
+            aircraft performance, autonomy, and system integration. I developed embedded C/C++ software for flight control and vehicle 
+            management computers. I also supported system integration testing, evaluated Linux-based embedded systems 
+            for avionics, and assisted in implementing a secure satellite-based beyond line of sight (BLOS) communication link between the 
+            aircraft and ground station.
+            <br><br>
+            Additional work included modifying in-house Windows-based C#/.NET tools for hardware testing and simulation, writing Python and 
+            shell scripts to automate software processes, and contributing to the development of a custom triplex autopilot using ArduPilot 
+            and real-time microcontroller firmware.
+        </p>
+        <img class="project-pic" src="images/kargo_uav_1.jpg" alt="KARGO UAV side view" style="display: block; margin: auto;">
+        <img class="project-pic" src="images/kargo_uav_2.jpg" alt="KARGO UAV flight test" style="display: block; margin: auto;">
     </section>
 
     <section id="projects">
-        <h1>Projects</h1>
+        <h1>University Projects</h1>
         <br>
 
         <p class="project-name">LibreFoodPantry</p>
@@ -48,29 +69,22 @@
             and back-end to meet the product owner's specifications, as well as writing tests for the back-end.
         </p>
         <img class="project-pic" src="images/backend_pic.png" alt="back-end" style="display: block; margin: auto;">
-        
         <img class="project-pic" src="images/frontend_pic.png" alt="front-end" style="display: block; margin: auto;">
-        <a id = "libre-link" href="https://librefoodpantry.org/">LibreFoodPantry.org</a>
+        <a id="libre-link" href="https://librefoodpantry.org/">LibreFoodPantry.org</a>
         <br>
-        <a id = "libre-link" href="https://gitlab.com/LibreFoodPantry/client-solutions/theas-pantry/inventorysystem">GitLab Repository</a>
-
-
-
+        <a id="libre-link" href="https://gitlab.com/LibreFoodPantry/client-solutions/theas-pantry/inventorysystem">GitLab Repository</a>
 
         <p class="project-name">Operation Hydration - App</p>
         <p class="project-description">I developed an Android app designed to help users improve their health by tracking their water intake throughout the day. 
             The app enables users to set personalized water consumption goals, either manually or by leveraging calculations based on their age and weight. Users 
             can input their water intake in either cups or ounces, with automatic conversion to cups for progress tracking. The app was developed using Android Studio and Java.
         </p>
-
-        <img class="project-pic" id = "app_pic" src="images/app_welcome.png" alt="app_welcome" style="display: block; margin: auto;">
-        
+        <img class="project-pic" id="app_pic" src="images/app_welcome.png" alt="app_welcome" style="display: block; margin: auto;">
         <video width="640" height="360" controls>
             <source src="images/Operation-Hydration.mp4" type="video/mp4">
             <source src="images/Operation-Hydration.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
-
 
         <p class="project-name">Restaurant Project</p>
         <p class="project-description">In this project I created a menu based system for a restaurant. The user can view the restaurant's menu as well
@@ -78,24 +92,19 @@
             has been served to remove them from the list. I utilized Java as the programming language, implementing multiple data structures and object-oriented 
             design principles to create the system. 
         </p>
-
         <video id="data_vid" width="640" height="360" controls>
             <source src="images/Restaurant_Project.mp4" type="video/mp4">
             <source src="images/Restaurant_Project.mp4" type="video/webm">
             Your browser does not support the video tag.
         </video>
 
-
-
-        <p class="project-name">Store Managment System</p>
+        <p class="project-name">Store Management System</p>
         <p class="project-description">This project involved creating a database in MySQL and developing a Java application to access and manipulate 
             the data. I designed and populated the database with the information needed for a video game store, including inventory, transactions, employee 
             information, and customer information. Additionally, I implemented role based access which include the roles of store clerk, manager, and owner. 
             The Java application has a CLI-based interface, allowing users to navigate to sub-menus and perform actions based on their privileges after logging in.
         </p>    
-
         <img class="project-pic" src="images/MySQL_Store.png" alt="MySQL_Store" style="display: block; margin: auto;">
-        
         <video id="data_vid" width="640" height="360" controls>
             <source src="images/Store_Database.mp4" type="video/mp4">
             <source src="images/Store_Database.mp4" type="video/webm">
@@ -107,17 +116,14 @@
         <h1>Contact</h1>
         <h2>Ryan Klenk</h2>
         <a href="https://www.linkedin.com/in/ryan-klenk-0b3098268/">
-            <img class = "logo" src="images/LinkedIn_logo.png" alt="LinkedIn">
+            <img class="logo" src="images/LinkedIn_logo.png" alt="LinkedIn">
         </a>
         <a href="https://github.com/rklenk95">
-            <img class = "logo" src="images/GitHub_logo.png" alt="GitHub">
+            <img class="logo" src="images/GitHub_logo.png" alt="GitHub">
         </a>
         <br>
         <button onclick="location.href='mailto:ryanjklenk@gmail.com'">EMAIL ME</button>
         <p id="reach-me">Reach me at <strong><u>ryanjklenk@gmail.com</u></strong></p>
     </section>
-    <script>
-    
-    </script>
 </body>
 </html>
