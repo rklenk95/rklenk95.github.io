@@ -1,129 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio - Ryan Klenk</title>
-    <link rel="stylesheet" href="styles.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Klenk Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header id="myHeader">
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work-experience">Work Experience</a></li>
-                <li><a href="#projects">University Projects</a></li>
-                <li><a href="#contact">Contact</a></li>                
-            </ul>
-        </nav>    
-    </header>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <h2 class="logo">Ryan Klenk</h2>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work-experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <section id="about-me">
-        <h3>Ryan Klenk</h3>
-        <h1>About Me</h1>
-        <figure>
-            <img src="images/head-shot.jpg" alt="head-shot">
-        </figure>
-        <p>         I'm a Software Engineer with a background in developing embedded systems, flight control software, and internal tools for 
-            complex hardware platforms. I hold a Bachelor's degree in Computer Science from Worcester State University and have professional 
-            experience working on advanced unmanned aerial systems, including the KARGO UAV program at Kaman Air Vehicles.
-            <br><br>
-            My technical skill set includes C, C++, Python, C#/.NET, shell scripting, and DevOps tools. I've contributed to real-time and 
-            mission-critical software systems, supported system integration and testing, and created automation tools to improve engineering 
-            workflows. I'm passionate about building efficient, reliable software for high-impact applications.</p>
+  <main>
+    <section id="about">
+      <h1>About Me</h1>
+      <div class="about-content">
+        <img src="images/head-shot.jpg" alt="Headshot of Ryan Klenk" class="profile-pic">
+        <p>
+          I'm a Software Engineer with a background in developing embedded systems, flight control software, and internal tools for
+          complex hardware platforms. I hold a Bachelor's degree in Computer Science from Worcester State University and have professional
+          experience working on advanced unmanned aerial systems, including the KARGO UAV program at Kaman Air Vehicles.
+          <br /><br />
+          My technical skill set includes C, C++, Python, C#/.NET, shell scripting, and DevOps tools. I've contributed to real-time and mission-critical 
+          software systems, supported system integration and testing, and created automation tools to improve engineering workflows. I'm passionate about 
+          building efficient, reliable software for high-impact applications.
+        </p>
+      </div>
     </section>
 
     <section id="work-experience">
-        <h1>Work Experience</h1>
-        <br>
-    
-        <p class="project-name">Software Engineer – Kaman Air Vehicles (March 2023 – April 2025)</p>
-        <p class="project-description">
-            Contributed to the development of the <strong>KARGO UAV</strong>, a medium-lift autonomous unmanned aerial vehicle (UAV) 
-            designed to support expeditionary logistics missions for both the U.S. military and commercial clients.
-            <br><br>
-            As part of a multidisciplinary engineering team, I focused on embedded systems, flight control, and internal tooling to support 
-            aircraft performance, autonomy, and system integration. I developed embedded C/C++ software for flight control and vehicle 
-            management computers. I also supported system integration testing, evaluated Linux-based embedded systems 
-            for avionics, and assisted in implementing a secure satellite-based beyond line of sight (BLOS) communication link between the 
-            aircraft and ground station.
-            <br><br>
-            Additional work included modifying in-house Windows-based C#/.NET tools for hardware testing and simulation, writing Python and 
-            shell scripts to automate software processes, and contributing to the development of a custom triplex autopilot using ArduPilot 
-            and real-time microcontroller firmware.
+      <h1>Work Experience</h1>
+      <div class="experience-entry">
+        <h3>Kaman Air Vehicles</h3>
+        <span class="duration">Software Engineer | March 2023 – April 2025</span>
+        <p>
+          Contributed to the development of the <strong>KARGO UAV</strong>, a medium-lift autonomous unmanned aerial vehicle (UAV)
+          designed for expeditionary logistics missions for both the U.S. military and commercial clients.
+          <br /><br />
+          As part of a multidisciplinary engineering team, I focused on embedded systems, flight control, and internal tooling to support
+          aircraft performance, autonomy, and system integration. I developed embedded C/C++ software for flight control, vehicle
+          management, and mission management computers. I also supported system integration testing, evaluated Linux-based embedded systems
+          for avionics, and assisted in implementing a secure satellite-based beyond line of sight (BLOS) communication link between the
+          aircraft and ground station.
+          <br /><br />
+          Additional work included modifying in-house Windows-based C#/.NET tools for hardware testing and simulation, writing Python and
+          shell scripts to automate software processes, and contributing to the development of a custom triplex autopilot using ArduPilot
+          and real-time microcontroller firmware.
         </p>
-        <img class="project-pic" src="images/kargo_uav_1.jpg" alt="KARGO UAV side view" style="display: block; margin: auto;">
-        <img class="project-pic" src="images/kargo_uav_2.jpg" alt="KARGO UAV flight test" style="display: block; margin: auto;">
+        <img src="images/kargo_uav_1.jpg" alt="KARGO UAV side view" class="experience-img">
+        <img src="images/kargo_uav_2.jpg" alt="KARGO UAV test flight" class="experience-img">
+      </div>
     </section>
 
     <section id="projects">
-        <h1>University Projects</h1>
-        <br>
+      <h1>University Projects</h1>
 
-        <p class="project-name">LibreFoodPantry</p>
-        <p class="project-description">LibreFoodPantry is an open-source software that helps local food pantries enhance their services by managing operations and 
-            facilitating coordination with food banks. As part of a team of five peers, I focused on the inventory subsystem, which was one of the three subsystems 
-            of the system. Our work involved developing three front-end components, a back-end system, and the corresponding API for seamless communication.
-            To streamline our development process, we utilized GitLab for hosting the project and implementing a CI/CD pipeline. Additionally, we employed Docker for 
-            code development, ensuring compatibility across various machines. Our team embraced the Scrum framework for efficient organization and collaboration.
-            Within the project, I contributed to both the front-end and back-end development. Some notable accomplishments include updating sections of the front-end 
-            and back-end to meet the product owner's specifications, as well as writing tests for the back-end.
+      <div class="project">
+        <h3>LibreFoodPantry</h3>
+        <p>
+          Contributed to an open-source project helping food pantries manage inventory systems. Developed both front-end (Vue) and back-end (Spring Boot)
+          components and implemented REST APIs. Used GitLab CI/CD, Docker, and Scrum methodology.
         </p>
-        <img class="project-pic" src="images/backend_pic.png" alt="back-end" style="display: block; margin: auto;">
-        <img class="project-pic" src="images/frontend_pic.png" alt="front-end" style="display: block; margin: auto;">
-        <a id="libre-link" href="https://librefoodpantry.org/">LibreFoodPantry.org</a>
-        <br>
-        <a id="libre-link" href="https://gitlab.com/LibreFoodPantry/client-solutions/theas-pantry/inventorysystem">GitLab Repository</a>
+        <img src="images/backend_pic.png" alt="Back-end screenshot" class="project-img">
+        <img src="images/frontend_pic.png" alt="Front-end screenshot" class="project-img">
+        <a href="https://librefoodpantry.org/" target="_blank">LibreFoodPantry.org</a> |
+        <a href="https://gitlab.com/LibreFoodPantry/client-solutions/theas-pantry/inventorysystem" target="_blank">GitLab Repo</a>
+      </div>
 
-        <p class="project-name">Operation Hydration - App</p>
-        <p class="project-description">I developed an Android app designed to help users improve their health by tracking their water intake throughout the day. 
-            The app enables users to set personalized water consumption goals, either manually or by leveraging calculations based on their age and weight. Users 
-            can input their water intake in either cups or ounces, with automatic conversion to cups for progress tracking. The app was developed using Android Studio and Java.
+      <div class="project">
+        <h3>Operation Hydration – Android App</h3>
+        <p>
+          Developed an Android app to help users track daily water intake. Users could set goals, convert between cups/ounces, and monitor
+          progress. Built in Java using Android Studio.
         </p>
-        <img class="project-pic" id="app_pic" src="images/app_welcome.png" alt="app_welcome" style="display: block; margin: auto;">
-        <video width="640" height="360" controls>
-            <source src="images/Operation-Hydration.mp4" type="video/mp4">
-            <source src="images/Operation-Hydration.webm" type="video/webm">
-            Your browser does not support the video tag.
+        <img src="images/app_welcome.png" alt="App screenshot" class="project-img">
+        <video controls>
+          <source src="images/Operation-Hydration.mp4" type="video/mp4">
         </video>
+      </div>
 
-        <p class="project-name">Restaurant Project</p>
-        <p class="project-description">In this project I created a menu based system for a restaurant. The user can view the restaurant's menu as well
-            as add to it or remove items from it. This system also allows for orders to be taken. The orders can be viewed and then marked as the customer
-            has been served to remove them from the list. I utilized Java as the programming language, implementing multiple data structures and object-oriented 
-            design principles to create the system. 
+      <div class="project">
+        <h3>Restaurant Management System</h3>
+        <p>
+          Java-based menu system for managing restaurant orders and items. Implemented with object-oriented design, user interaction,
+          and order tracking.
         </p>
-        <video id="data_vid" width="640" height="360" controls>
-            <source src="images/Restaurant_Project.mp4" type="video/mp4">
-            <source src="images/Restaurant_Project.mp4" type="video/webm">
-            Your browser does not support the video tag.
+        <video controls>
+          <source src="images/Restaurant_Project.mp4" type="video/mp4">
         </video>
+      </div>
 
-        <p class="project-name">Store Management System</p>
-        <p class="project-description">This project involved creating a database in MySQL and developing a Java application to access and manipulate 
-            the data. I designed and populated the database with the information needed for a video game store, including inventory, transactions, employee 
-            information, and customer information. Additionally, I implemented role based access which include the roles of store clerk, manager, and owner. 
-            The Java application has a CLI-based interface, allowing users to navigate to sub-menus and perform actions based on their privileges after logging in.
-        </p>    
-        <img class="project-pic" src="images/MySQL_Store.png" alt="MySQL_Store" style="display: block; margin: auto;">
-        <video id="data_vid" width="640" height="360" controls>
-            <source src="images/Store_Database.mp4" type="video/mp4">
-            <source src="images/Store_Database.mp4" type="video/webm">
-            Your browser does not support the video tag.
+      <div class="project">
+        <h3>Store Management System</h3>
+        <p>
+          Built a MySQL database and CLI-based Java application for a video game store. Features included role-based access, transaction
+          tracking, inventory control, and staff/customer data management.
+        </p>
+        <img src="images/MySQL_Store.png" alt="Store DB Screenshot" class="project-img">
+        <video controls>
+          <source src="images/Store_Database.mp4" type="video/mp4">
         </video>
+      </div>
     </section>
 
     <section id="contact">
-        <h1>Contact</h1>
-        <h2>Ryan Klenk</h2>
-        <a href="https://www.linkedin.com/in/ryan-klenk-0b3098268/">
-            <img class="logo" src="images/LinkedIn_logo.png" alt="LinkedIn">
+      <h1>Contact</h1>
+      <p class="contact-name">Ryan Klenk</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ryan-klenk-0b3098268/" target="_blank">
+          <img class="logo" src="images/LinkedIn_logo.png" alt="LinkedIn">
         </a>
-        <a href="https://github.com/rklenk95">
-            <img class="logo" src="images/GitHub_logo.png" alt="GitHub">
+        <a href="https://github.com/rklenk95" target="_blank">
+          <img class="logo" src="images/GitHub_logo.png" alt="GitHub">
         </a>
-        <br>
-        <button onclick="location.href='mailto:ryanjklenk@gmail.com'">EMAIL ME</button>
-        <p id="reach-me">Reach me at <strong><u>ryanjklenk@gmail.com</u></strong></p>
+      </div>
+      <button onclick="location.href='mailto:ryanjklenk@gmail.com'">EMAIL ME</button>
+      <p id="reach-me">Reach me at <strong><u>ryanjklenk@gmail.com</u></strong></p>
     </section>
+  </main>
 </body>
 </html>
